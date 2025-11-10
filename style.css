@@ -1,0 +1,86 @@
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #ff0800;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #a30000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+    text-shadow: 0 0 5px #fff;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #d70000;
+    border-bottom: 2px solid #d70000;
+    padding-bottom: 5px;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+iframe, video {
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+footer {
+    background-color: #630505;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.jump-btn {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.jump-btn:hover {
+    background-color: #ff3333;
+    transform: scale(1.05);
+}

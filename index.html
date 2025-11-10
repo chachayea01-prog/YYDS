@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的多功能網頁</title>
+
+    <!-- 外部 CSS 樣式 -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 頁首 -->
+   <header class="banner">
+    <div class="banner-content">
+        <img src="imgen/1.jpg" alt="網站橫幅" class="banner-img">
+        <div class="banner-text">
+            <h1>我爱中国</h1>
+            <p>伟大的 光荣的 正确的中国共产党万岁!</p>
+        </div>
+        <button id="playButton" class="play-btn">▶️ 播放音樂</button>
+    </div>
+
+    <!-- 音樂檔 -->
+    <audio id="bgm" loop>
+        <source src="imgen/紅太陽爆音版.mp3" type="audio/mpeg">
+        您的瀏覽器不支援音樂播放。
+    </audio>
+</header>
+
+
+
+    <!-- 導覽列 -->
+    <nav>
+        <a href="#home">首</a>
+        <a href="#about">關於我</a>
+        <a href="#gallery">圖片集</a>
+        <a href="#video">影片</a>
+        <a href="#map">Google 地圖</a>
+
+    </nav>
+
+    <!-- 主內容 -->
+    <main>
+        <!-- 首頁 -->
+        <section id="home">
+            <h2>首頁</h2>
+            <p>毛主席是我们人民心中的红太阳</p>
+            <p>坚定不移听党话 矢志不渝跟党走</p>
+        </section>
+
+        <!-- 關於黨 -->
+        <section id="about">
+            <h2>關於我</h2>
+            <p>我是一位中国共产党坚定支持者</p>
+        </section>
+
+        <!-- 圖片區 -->
+        <section id="gallery">
+            <h2>圖片集</h2>
+            <img src="imgen/images.jpg" alt="範例圖片" width="400">
+            <p>毛主席性感照</p>
+        </section>
+
+        <!-- 影片區 -->
+        <section id="video">
+            <h2>影片展示</h2>
+
+            <h3>YouTube 嵌入影片：</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/v8ZH_zRVP28?si=PLilrCRZOxoV0Dl6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+           
+        </section>
+
+        <!-- Google 地圖 -->
+        <section id="map">
+            <h2>Google 地圖</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.4600306099255!2d116.39747990598713!3d39.90872021325428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36637698dc4374d9%3A0x6928cb83a148399a!2z5aSp5a6J6ZaA!5e0!3m2!1szh-TW!2stw!4v1762795534584!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               
+        </section>
+    </main>
+<button onclick="window.location.href='02.html'" class="jump-btn">
+     如果你也真心愛著主國中國愛著我們的主席習主席那就點我點我點我
+</button>
+    <!-- 頁尾 -->
+    <footer>
+        <p>每天對習主席導管😎 | 設計者：葉律言</p>
+    </footer>
+   
+</section>
+<script>
+    const bgm = document.getElementById('bgm');
+    const playButton = document.getElementById('playButton');
+    let isPlaying = false;
+
+    playButton.addEventListener('click', () => {
+        if (isPlaying) {
+            bgm.pause();
+            playButton.textContent = '▶️ 播放音樂';
+        } else {
+            bgm.play();
+            playButton.textContent = '⏸ 暫停音樂';
+        }
+        isPlaying = !isPlaying;
+    });
+</script>
+
+
+</body>
+</html>
